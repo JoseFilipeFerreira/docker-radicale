@@ -35,5 +35,6 @@ max_content_length = 100000000
 
 [storage]
 filesystem_folder = /collections
-hook = git add -A && (git diff --cached --quiet || git commit -m "Changes by "%(user)s)
+# add git versioning to calendar database
+# hook = git add -A && (git diff --cached --quiet || git commit -m "Changes by "%(user)s)
 ```
