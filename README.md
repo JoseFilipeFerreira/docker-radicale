@@ -12,7 +12,7 @@ radicale:
     - "5232:5232"
   volumes:
     # add git versioning to calendar database
-    # - ~/.gitconfig:/etc/gitconfig
+    # - ~/.gitconfig:/root/.gitconfig
     - ./radicale/users:/users
     - ./radicale/collections:/collections
     - ./radicale/config:/config
