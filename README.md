@@ -6,7 +6,7 @@ docker container for [radicale](https://radicale.org/v3.html)
 
 ```yml
 radicale:
-  image: josefilipeferreira/docker-radicale:master
+  image: josefilipeferreira/docker-radicale
   container_name: radicale
   ports:
     - "5232:5232"
