@@ -10,9 +10,11 @@ radicale:
   container_name: radicale
   ports:
     - "5232:5232"
+  # add git versioning to calendar database
+  # environment:
+    # GIT_AUTHOR_NAME: "your-user-name"
+    # EMAIL: "your@email.com"
   volumes:
-    # add git versioning to calendar database
-    # - ~/.gitconfig:/root/.gitconfig
     - ./radicale/users:/users
     - ./radicale/collections:/collections
     - ./radicale/config:/config
